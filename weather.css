@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a7d7db;
+}
+
+.navbar{
+    background-color: #42bf4e;
+    display: flex;
+    text-align: center;
+    padding: 10px 30%;
+    
+}
+
+
+.navbar i{
+    font-size: 30px; /* Size of the icon */
+    margin-right: 10px; /* Space between the icon and the text */
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar a {
+    color: white; /* Set the color of the icon */
+    text-decoration: none; /* Remove the underline from the link */
+    display: flex;
+    align-items: center;
+}
+
+.navbar:hover a, .navbar:hover i {
+    color: rgb(31, 70, 185); /* Highlight the icon and text on hover */
+    transform: scale(1.1);
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #1ac320, #106574);
+    color: #fff;
+    margin: 100px auto 0; /* ortaladı tüm sayfayı */
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center; /*yanındaki itemi ortaladı*/
+    justify-content: space-between; /*itemler arası boşluk yaptı */
+    
+}
+
+.search input{
+    border: 0;
+    outline:0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline:0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{ /**iç içe olan şeyleri bu şekilde yazabilirsin */
+    width: 36px;
+}
+
+.weather img{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+
+.details{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 0px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    margin-top: 0px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 14px;
+    margin-top: -25px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none;
+}
+
+
+#footer {
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+.footerul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 40px; /* Space between icons */
+}
+
+.itemli {
+    display: flex; /* Align the icon and text horizontally */
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center them vertically */
+    text-align: center; /* Ensure text is centered */
+}
+
+.footerul i {
+    margin-top: 10px;
+    margin-bottom: 5px; /* Add some space below the icon */
+    font-size: 20px; /* Consistent size for icons */
+    transition: transform 0.2s ease; /* Smooth transition on hover */
+}
+
+.footerul i:hover {
+    transform: scale(1.1); /* Scale up the icons when hovered */
+}
+
+.footerul li a, .footerul li span {
+    font-size: 11px; /* Adjust text size to fit well with the icons */
+    color: #fff; /* Make sure the text is white */
+    text-decoration: none;
+}
+
+.footerul li a {
+    font-weight: bold; /* Bolden the links */
+}
